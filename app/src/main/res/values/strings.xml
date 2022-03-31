@@ -3,4 +3,9 @@
     <string name="Helloworld"> Any text </string>
     <string name="MyId">ID</string>
     <string name="MyName">NAME</string>
+    <string name="sub">SUB</string>
+    <string name="add">ADD</string>
+    <string name="mul">MUL</string>
+    <string name="div">DIV</string>
+    <string name="result">Result: %s</string>
 </resources>

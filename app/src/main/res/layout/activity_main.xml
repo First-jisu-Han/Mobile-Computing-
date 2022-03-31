@@ -1,31 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:hint="첫번째 숫자"
+        android:inputType="phone"></EditText>
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="두번째 숫자"
+        android:inputType="phone"></EditText>
 
     <Button
-        android:id="@+id/name"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="392dp"
-        android:text="@string/MyName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></Button>
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/add"
+        android:textColor="@color/black"
+        app:backgroundTint="#7EB3B3"></Button>
 
     <Button
-        android:id="@+id/id"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="496dp"
-        android:text="@string/MyId"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></Button>
+        android:id="@+id/sub"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/sub"
+        android:textColor="@color/black"
+        app:backgroundTint="#DCD6A6"></Button>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/mul"
+        android:textColor="@color/black"
+        app:backgroundTint="#C2A7C6"></Button>
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/div"
+        android:textColor="@color/black"
+        app:backgroundTint="#999EB6"></Button>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="결과: "
+        android:textSize="30sp"
+        >
+    </TextView>
+</LinearLayout>
