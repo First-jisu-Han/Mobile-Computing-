@@ -4,23 +4,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
+import com.example.helloworld.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    lateinit var name: Button  // 버튼 id로 버튼 변수 선언 - name
-    lateinit var id: Button  //  버튼 id러 버튼 변수 선언  - id
-
+    lateinit var binding: ActivityMainBinding   // viewBinding 사용
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        name = findViewById<Button>(R.id.name)
-        id= findViewById<Button>(R.id.id)
-        name.setOnClickListener{
-            Toast.makeText(applicationContext,"JISU HAN",Toast.LENGTH_LONG).show()
-        }
-        id.setOnClickListener{
-            Toast.makeText(applicationContext,"60172390",Toast.LENGTH_LONG).show()
-        }
-
-
+        binding= ActivityMainBinding.inflate(layoutInflater) // viewBinding 을 위해 추가해줘야됨
+        setContentView(binding.root)  // viewBinding을 위해서 수정
+        binding.name.setOnClickListener{ Toast.makeText(applicationContext,"JISU HAN",Toast.LENGTH_LONG).show() }
+        binding.id.setOnClickListener{ Toast.makeText(applicationContext,"60172390",Toast.LENGTH_LONG).show() }
     }
 }
