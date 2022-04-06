@@ -60,6 +60,10 @@ class MainActivity : AppCompatActivity() {
                 num1 = binding.num1.text.toString().toDouble()
                 num2 = binding.num2.text.toString().toDouble()
                 result = num1 / num2
+                if(result.isInfinite()){
+                    Toast.makeText(applicationContext,"나누는 수는 0이될 수 없습니다 다시입력하시오",Toast.LENGTH_SHORT).show()
+                    return@setOnClickListener
+                }
                 binding.result.text = getString(R.string.result, result.toString())
             } catch (e: NumberFormatException) {
                 Toast.makeText(applicationContext,"숫자를 입력하시오",Toast.LENGTH_SHORT).show()
