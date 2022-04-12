@@ -8,4 +8,13 @@
     <string name="mul">MUL</string>
     <string name="div">DIV</string>
     <string name="result">Result: %s</string>
+    <string name="widget1">widget1</string>
+    <string name="widget2">widgt2</string>
+    <string name="widget3">widget3</string>
+    <string name="widget4">widget4</string>
+    <string name="widget5">widget5</string>
+    <string name="widget6">widget6</string>
+    <string name="widget7">widget7</string>
+    <string name="widget8">widget8</string>
+
 </resources>
