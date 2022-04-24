@@ -93,7 +93,7 @@
         android:layout_gravity="fill_horizontal"
         android:text="@string/add"
         android:textColor="@color/black"
-        app:backgroundTint="#7EB3B3"></Button>
+        app:backgroundTint="#7EB3B3"/>
 
     <Button
         android:id="@+id/sub"
@@ -102,7 +102,7 @@
         android:layout_columnSpan="5"
         android:text="@string/sub"
         android:textColor="@color/black"
-        app:backgroundTint="#DCD6A6"></Button>
+        app:backgroundTint="#DCD6A6"/>
 
     <Button
         android:id="@+id/mul"
@@ -111,7 +111,7 @@
         android:layout_columnSpan="5"
         android:text="@string/mul"
         android:textColor="@color/black"
-        app:backgroundTint="#C2A7C6"></Button>
+        app:backgroundTint="#C2A7C6"/>
 
     <Button
         android:id="@+id/div"
@@ -120,12 +120,12 @@
         android:layout_columnSpan="5"
         android:text="@string/div"
         android:textColor="@color/black"
-        app:backgroundTint="#999EB6"></Button>
+        app:backgroundTint="#999EB6"/>
 
     <TextView
         android:id="@+id/result"
         android:layout_gravity="fill_horizontal"
         android:layout_columnSpan="5"
         android:text="결과: "
-        android:textSize="30sp"></TextView>
+        android:textSize="30sp"/>
 </GridLayout>

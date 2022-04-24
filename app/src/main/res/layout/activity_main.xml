@@ -12,16 +12,13 @@
         android:layout_height="wrap_content"
         android:layout_columnSpan="5"
         android:hint="첫번째 숫자"
-        android:inputType="phone"></EditText>
-
+        android:inputType="phone"/>
     <EditText
         android:id="@+id/num2"
-        android:textSize="15sp"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:hint="두번째 숫자"
-        ></EditText>
-
+        android:textSize="15sp"/>
     <Button
         android:id="@+id/add"
         android:layout_width="0dp"
@@ -29,36 +26,32 @@
         android:layout_columnWeight="1"
         android:text="@string/add"
         android:textColor="@color/black"
-        app:backgroundTint="#7EB3B3"></Button>
-
+        app:backgroundTint="#7EB3B3" />
     <Button
         android:id="@+id/sub"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="@string/sub"
         android:textColor="@color/black"
-        app:backgroundTint="#DCD6A6"></Button>
-
+        app:backgroundTint="#DCD6A6" />
     <Button
         android:id="@+id/mul"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="@string/mul"
         android:textColor="@color/black"
-        app:backgroundTint="#C2A7C6"></Button>
-
+        app:backgroundTint="#C2A7C6"/>
     <Button
         android:id="@+id/div"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="@string/div"
         android:textColor="@color/black"
-        app:backgroundTint="#999EB6"></Button>
-
+        app:backgroundTint="#999EB6"/>
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="204dp"
         android:text="결과: "
-        android:textSize="30sp"></TextView>
+        android:textSize="30sp"/>
 </LinearLayout>

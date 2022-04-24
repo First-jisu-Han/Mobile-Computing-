@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         var num2:Double
         var result:Double
         super.onCreate(savedInstanceState)
-        binding =
-            ActivityMainBinding.inflate(layoutInflater) // xml에 있는 레이아웃정보들을 받아올 수 있게 inflate 함수실행
+
+        binding = ActivityMainBinding.inflate(layoutInflater) // xml에 있는 레이아웃정보들을 받아올 수 있게 inflate 함수실행
         setContentView(binding.root)  // viewBinding을 위해서 수정
 
         binding.add.setOnClickListener {

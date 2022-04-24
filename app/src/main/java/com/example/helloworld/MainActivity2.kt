@@ -107,10 +107,9 @@ class MainActivity2 : AppCompatActivity(), View.OnClickListener {
 
         // 버튼을 누르먄, 해당 포커스가 있는 숫자를 input 변수에 계속 추가 1 클릭 , 2 클릭 => 12
         // editText num1 부분과 num2 부분 둘 다 똑같이 작동 , 만약 다른곳을 클릭하면 메세지나오게끔
-
         override fun onClick(v: View?) {
             var input: String = (v as Button).text.toString() // v를 Button 으로 캐스팅
-            if (binding.num1.isFocusable) {
+            if(binding.num1.isFocusable) {
                 input = binding.num1.text.toString() + input
                 binding.num1.setText(input)
             } else if (binding.num2.isFocused) {
