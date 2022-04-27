@@ -16,5 +16,6 @@
     <string name="widget6">widget6</string>
     <string name="widget7">widget7</string>
     <string name="widget8">widget8</string>
-
+    <string name="read">read</string>
+    <string name="write">write</string>
 </resources>
